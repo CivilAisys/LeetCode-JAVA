@@ -1,7 +1,5 @@
 package S02_AddTwoNumber;
 
-import java.util.List;
-
 public class Solution {
 
 	public static class ListNode {
