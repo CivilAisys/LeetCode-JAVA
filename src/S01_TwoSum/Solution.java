@@ -26,11 +26,11 @@ public class Solution {
 		Map<Integer, Integer> map = new HashMap<>();
 
 		for (int i = 0; i < nums.length; i++) {
-			int complement = target - nums[i]; //計算補數
-			if (map.containsKey(complement)) { //若是補數在map中 就代表找到其解
+			int complement = target - nums[i]; // 計算補數
+			if (map.containsKey(complement)) { // 若是補數在map中 就代表找到其解
 				return new int[] { map.get(complement), i };
 			}
-			map.put(nums[i], i); //key存方當前數 value為index
+			map.put(nums[i], i); // key存放當前數 value為index
 		}
 
 		throw new IllegalArgumentException("No two sum solution");
