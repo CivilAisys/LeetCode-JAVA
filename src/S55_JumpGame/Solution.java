@@ -1,4 +1,6 @@
-public class S55_JumpGame {
+package S55_JumpGame;
+
+public class Solution {
 
     /**
      * 使用 greedy
