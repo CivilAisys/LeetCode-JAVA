@@ -34,7 +34,7 @@ public class Solution {
                 for (int i = right; i >= left; i--) {
                     result.add(matrix[bottom][i]);
                 }
-                bottom--; // bottom下移
+                bottom--; // bottom上移
             }
 
             // right 左移需要檢查 也可能有邊界錯誤
