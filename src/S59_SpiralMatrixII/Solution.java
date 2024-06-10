@@ -7,7 +7,7 @@ public class Solution {
         int num = 1; // 從1開始填充
         int left = 0, right = n - 1, top = 0, bottom = n - 1; // 上下左右索引
 
-        while (left < right && top <= bottom) {
+        while (left <= right && top <= bottom) {
             // 從左到右填充
             for (int i = left; i <= right; i++) {
                 matrix[top][i] = num++;
