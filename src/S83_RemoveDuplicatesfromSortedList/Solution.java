@@ -9,7 +9,7 @@ public class Solution {
         ListNode current = head;
 
         // 遍歷鏈表
-        while(current != null && current.next != null){
+        while(current.next != null){
             if(current.val == current.next.val){
                 // 重複 將下個節點替換成下下個節點
                 current.next = current.next.next;
