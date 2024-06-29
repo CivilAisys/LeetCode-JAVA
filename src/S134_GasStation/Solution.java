@@ -12,6 +12,8 @@ public class Solution {
 			currentTank += gas[i] - cost[i];
 			// 排除不可能的起點 移動起點並重置當前油量
 			if (currentTank < 0) {
+				// 可以更新為 i + 1是因為 到達i時 i可能不是起點或當前起點
+				// 但是i沒辦法到達 i+1 代表起點到i的總油量是不夠的  所以從中間任一點都是不夠的
 				startStation = i + 1;
 				currentTank = 0;
 			}
