@@ -37,7 +37,7 @@ public class Solution {
         Stack<TreeNode> stack = new Stack<>();
         Stack<TreeNode> output = new Stack<>(); // 塞入的順序為 根 -> 右 -> 左 彈出的順序就是 左 -> 右 -> 根
         stack.push(root);
-
+        // 加入output的順序為根 右 左 逆序處理就是後續的 左 右 根
         while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
             output.push(node);
