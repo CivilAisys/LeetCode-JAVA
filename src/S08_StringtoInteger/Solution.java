@@ -30,7 +30,7 @@ public class Solution {
 		while (index < s.length()) {
 			char currentChar = s.charAt(index);
 
-			if (currentChar < '0' || currentChar > '9')
+			if (!Character.isDigit(currentChar))
 				break; // 非數值直接break
 
 			result = result * 10 + (currentChar - '0'); // char 加減計算使用ascII碼值 故需要扣掉0的值
