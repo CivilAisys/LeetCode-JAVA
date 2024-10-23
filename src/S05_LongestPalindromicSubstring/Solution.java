@@ -17,7 +17,7 @@ public class Solution {
 			int len = Math.max(len1, len2); //取得當前最大回文長度
 
 			// 當len長度大於 end - start時。更新左右邊界
-			if (len > end - start) {
+			if (len > end - start + 1) {
 				// 計算左右邊界 start 需要len - 1 是因為在偶數回文情況下 len / 2 會失效
 				start = i - (len - 1) / 2;
 				end = i + len / 2; // 
