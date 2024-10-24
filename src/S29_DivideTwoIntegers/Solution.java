@@ -11,7 +11,7 @@ public class Solution {
         // 判斷結果正負號 使用異與 只要一者為1 結果就為1
         boolean isNegative = (dividend < 0) ^ (divisor < 0);
 
-        // 將被除數和除數轉換為負數，避免溢出
+        // 將被除數和除數轉換為正數，避免溢出
         int absDividend = Math.abs(dividend);
         int absDivisor = Math.abs(divisor);
 
