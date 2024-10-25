@@ -21,12 +21,12 @@ public class Solution {
             String sortedStr = new String(charArray);
             // 排序後的字串不再map中就創建一組
             if (!map.containsKey(sortedStr)) {
-                map.put(sortedStr, new ArrayList<String>());
+                map.put(sortedStr, new ArrayList<>());
             }
 
             map.get(sortedStr).add(s);
         }
 
-        return new ArrayList<List<String>>(map.values());
+        return new ArrayList<>(map.values());
     }
 }
