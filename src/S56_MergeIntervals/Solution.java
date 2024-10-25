@@ -2,13 +2,14 @@ package S56_MergeIntervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Solution {
 
     public int[][] merge(int[][] intervals) {
         // 先對區間進行排序 依照起始位置排
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
 
         List<int[]> merged = new ArrayList<>();
         for (int[] interval : intervals) {
