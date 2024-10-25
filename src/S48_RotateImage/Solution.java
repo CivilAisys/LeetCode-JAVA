@@ -3,7 +3,8 @@ package S48_RotateImage;
 public class Solution {
 
     /**
-     * 要將圖片進行90度翻轉 先進行1.轉置矩陣 2. 列翻轉
+     * 要將圖片進行90度翻轉 先進行1.轉置矩陣 2. 行翻轉
+     * 時間 O(n * n) 空間 O(1)
      */
     public void rotate(int[][] matrix) {
         int matrixLength = matrix.length;
@@ -17,7 +18,7 @@ public class Solution {
             }
         }
 
-        // 列翻轉
+        // 行翻轉
         for (int i = 0; i < matrixLength; i++) {
             for (int j = 0; j < matrixLength / 2; j++) { // 只需要翻轉到中間位置即可
                 int temp = matrix[i][j];
