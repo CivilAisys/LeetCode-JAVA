@@ -7,6 +7,7 @@ public class Solution {
 
     /**
      * 使用backtracking 因為不重複但需要紀錄已經使用過的值
+     * 時間和空間複雜度為O (n * n!) 每個選擇都要遍歷n遍  總共有 n!種選擇
      */
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
