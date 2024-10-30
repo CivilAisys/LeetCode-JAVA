@@ -7,7 +7,7 @@ public class Solution {
 			return nums[0];
 		}
 
-		// dp數組
+		// dp數組 表示到達索引i的房間可以搶到的最大金額
 		int[] dp = new int[nums.length];
 
 		// 初始化dp[0] & dp[1]
