@@ -15,7 +15,7 @@ public class Solution {
 		// 遍每個位置 從 (1,1)開始 (0,y) (x,0) 是多出來用來處理邊界的
 		for (int i = 1; i <= rows; i++) {
 			for (int j = 1; j <= cols; j++) {
-				// 左上角為 '1' 才有可能組成更大的正方形
+				// 右下角為 '1' 才有可能組成更大的正方形
 				if (matrix[i - 1][j - 1] == '1') {
 					dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
 					maxSide = Math.max(dp[i][j], maxSide);
