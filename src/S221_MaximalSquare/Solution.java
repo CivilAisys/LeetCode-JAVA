@@ -23,7 +23,7 @@ public class Solution {
 			}
 		}
 
-		return maxSide;
+		return maxSide * maxSide;
 	}
 
 }
