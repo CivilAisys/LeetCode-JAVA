@@ -8,11 +8,11 @@ public class Solution {
 		int right = n;
 
 		// 二分查找
-		while (left < right) {
+		while (left <= right) {
 			int mid = left + (right - left) / 2; // 避免溢出
 
 			if (isBadVersion(mid)) {
-				right = mid;  // 如果 mid 是壞版本，縮小範圍到左邊
+				right = mid - 1;  // 如果 mid 是壞版本，縮小範圍到左邊
 			} else {
 				left = mid + 1;  // 如果 mid 不是壞版本，縮小範圍到右邊
 			}
