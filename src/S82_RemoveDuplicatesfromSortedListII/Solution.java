@@ -1,4 +1,4 @@
-package S88_RemoveDuplicatesfromSortedListII;
+package S82_RemoveDuplicatesfromSortedListII;
 
 public class Solution {
 
